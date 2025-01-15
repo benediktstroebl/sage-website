@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAgE Research Group - Science of Agent Evaluation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        :root {
+            --accent-blue: #1a365d;
+            --hover-blue: #1e4b8c;
+        }
+        .btn-primary {
+            background-color: var(--accent-blue);
+            transition: background-color 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--hover-blue);
+        }
+        .text-accent {
+            color: var(--accent-blue);
+        }
+        .hover-text-accent:hover {
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-semibold">
+                    SAgE Research Group
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#about" class="hover:text-blue-600">About</a>
+                    <a href="#projects" class="hover:text-blue-600">Projects</a>
+                    <a href="#publications" class="hover:text-blue-600">Publications</a>
+                    <a href="#team" class="hover:text-blue-600">Team</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Science of Agent Evaluation</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Advancing the systematic study and evaluation of AI agents through rigorous methodologies and open benchmarks.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Affiliations -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-center items-center space-x-12">
+                <img src="princeton.png" alt="Princeton University" class="h-12">
+                <img src="citp.png" alt="CITP" class="h-14">
+                <img src="pli.png" alt="PLI" class="h-12">
+                <img src="pal.png" alt="Princeton AI Lab" class="h-12">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">About SAgE</h2>
+            <div class="prose lg:prose-lg">
+                <p class="mb-4">
+                    The Science of Agent Evaluation (SAgE) research group focuses on developing rigorous methodologies for evaluating AI agents. Our work spans benchmark development, evaluation frameworks, and systematic studies of agent capabilities.
+                </p>
+                <p class="mb-4">
+                    Current research directions include cost-controlled evaluations, reproducibility in agent research, and standardized benchmarking frameworks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12">Key Projects</h2>
+            <div class="space-y-16">
+                <!-- HAL Project -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="order-2 md:order-1">
+                            <h3 class="text-2xl font-semibold mb-4">HAL (Holistic Agent Leaderboard)</h3>
+                            <p class="text-gray-600 mb-4">
+                                A standardized, third-party leaderboard system for evaluating AI agents across multiple dimensions including accuracy, cost, and reliability. HAL addresses the widespread limitations of current agent evaluation by providing:
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                                <li>Standardized evaluation metrics across benchmarks</li>
+                                <li>Cost-controlled performance comparisons</li>
+                                <li>Verified results with periodic re-running</li>
+                                <li>Detailed error analysis and visualization tools</li>
+                            </ul>
+                            <div class="flex space-x-4">
+                                <a href="#" class="btn-primary text-white px-4 py-2 rounded">View Project</a>
+                                <a href="#" class="btn-primary text-white px-4 py-2 rounded">Read Paper →</a>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="/api/placeholder/600/400" alt="HAL Dashboard" class="rounded-lg shadow-md w-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CORE-bench Project -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <img src="/api/placeholder/600/400" alt="CORE-bench Visualization" class="rounded-lg shadow-md w-full">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">CORE-bench</h3>
+                            <p class="text-gray-600 mb-4">
+                                A comprehensive benchmark designed to evaluate the reasoning and problem-solving capabilities of AI agents. CORE-bench focuses on:
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                                <li>Multi-step reasoning evaluation</li>
+                                <li>Real-world problem-solving scenarios</li>
+                                <li>Standardized metrics for comparison</li>
+                                <li>Extensive test cases and validation</li>
+                            </ul>
+                            <div class="flex space-x-4">
+                                <a href="#" class="btn-primary text-white px-4 py-2 rounded hover:bg-blue-700">View Project</a>
+                                <a href="#" class="btn-primary text-white px-4 py-2 rounded">Read Paper →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agents That Matter Paper -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="order-2 md:order-1">
+                            <h3 class="text-2xl font-semibold mb-4">AI Agents That Matter</h3>
+                            <p class="text-gray-600 mb-4">
+                                A comprehensive study analyzing current agent benchmarks and evaluation practices, identifying key shortcomings and proposing solutions for:
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                                <li>Cost-controlled evaluation methodologies</li>
+                                <li>Benchmark design principles</li>
+                                <li>Reproducibility standards</li>
+                                <li>Real-world applicability metrics</li>
+                            </ul>
+                            <div class="flex space-x-4">
+                                <a href="https://arxiv.org/abs/2407.01502" class="btn-primary text-white px-4 py-2 rounded">Read Paper →</a>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="/api/placeholder/600/400" alt="Paper Visualization" class="rounded-lg shadow-md w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Recent Publications</h2>
+            <div class="space-y-6">
+                <div class="border-b pb-6">
+                    <h3 class="text-xl font-semibold mb-2">AI Agents That Matter</h3>
+                    <p class="text-gray-600 mb-2">Sayash Kapoor, Benedikt Stroebl, Zachary S. Siegel, Nitya Nadgir, Arvind Narayanan</p>
+                    <p class="text-gray-500">arXiv 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12">Media & Blog Posts</h2>
+            
+            <!-- Blog Posts -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-6">Featured Blog Posts</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <span class="text-sm text-accent font-semibold">AISO Blog</span>
+                        <h4 class="text-xl font-semibold mt-2 mb-3">The Current State of AI Agent Evaluation</h4>
+                        <p class="text-gray-600 mb-4">An in-depth analysis of current challenges and opportunities in evaluating AI agents...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">January 2024</span>
+                            <a href="#" class="text-accent hover-text-accent">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <span class="text-sm text-accent font-semibold">AISO Blog</span>
+                        <h4 class="text-xl font-semibold mt-2 mb-3">Reproducibility in Agent Research</h4>
+                        <p class="text-gray-600 mb-4">Exploring the challenges and solutions for reproducible agent research...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">December 2023</span>
+                            <a href="#" class="text-accent hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Appearances -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6">Media Appearances</h3>
+                <div class="space-y-6">
+                    <!-- Podcasts -->
+                    <div class="border-b pb-6">
+                        <h4 class="text-lg font-semibold mb-4">Podcasts</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold">The Future of AI Agents</h5>
+                                    <p class="text-gray-600">Discussion on challenges and opportunities in AI agent development</p>
+                                    <a href="#" class="text-accent hover:text-blue-700 text-sm">Listen →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Articles -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">News Coverage</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold">"Making AI Agents More Reliable" - Tech Review</h5>
+                                    <p class="text-gray-600">Coverage of our work on agent evaluation methodologies</p>
+                                    <a href="#" class="text-accent hover:text-blue-700 text-sm">Read Article →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Team</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <img src="/api/placeholder/200/200" alt="Team Member" class="rounded-full w-40 h-40 mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Team Member Name</h3>
+                    <p class="text-gray-600">Role / Position</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+
+            <!-- Collaborators Section -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold mb-6">Collaborators</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
+                    <div class="group">
+                        <h4 class="font-medium group-hover:text-blue-600">John Smith</h4>
+                        <p class="text-gray-600 text-sm">Stanford University</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-medium group-hover:text-blue-600">Jane Doe</h4>
+                        <p class="text-gray-600 text-sm">Google Research</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-medium group-hover:text-blue-600">Alex Johnson</h4>
+                        <p class="text-gray-600 text-sm">MIT</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-medium group-hover:text-blue-600">Maria Garcia</h4>
+                        <p class="text-gray-600 text-sm">University of California, Berkeley</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-medium group-hover:text-blue-600">David Lee</h4>
+                        <p class="text-gray-600 text-sm">DeepMind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p>Princeton University</p>
+                    <p>Computer Science Department</p>
+                    <p>Princeton, NJ 08544</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">AISO Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Podcasts</a></li>
+                        <li><a href="#" class="hover:text-gray-300">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Funding</h3>
+                    <p class="text-sm">Our research is generously supported by grants from various organizations.</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm">© 2024 SAgE Research Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
