@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: 'Lato', sans-serif;
+            padding-top: 3.5rem;
         }
         :root {
             --accent-blue: #1a365d;
@@ -31,13 +32,30 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm">
+    <nav class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <div class="text-xl font-semibold">
                     SAgE Research Group
                 </div>
-                <div class="flex space-x-6">
+                <!-- Mobile menu button -->
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#projects" class="hover:text-blue-600">Projects</a>
+                    <a href="#publications" class="hover:text-blue-600">Publications</a>
+                    <a href="#media" class="hover:text-blue-600">Media</a>
+                    <a href="#ongoing-work" class="hover:text-blue-600">Ongoing Work</a>
+                    <a href="#team" class="hover:text-blue-600">Team</a>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
                     <a href="#projects" class="hover:text-blue-600">Projects</a>
                     <a href="#publications" class="hover:text-blue-600">Publications</a>
                     <a href="#media" class="hover:text-blue-600">Media</a>
@@ -49,11 +67,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-white py-8">
+    <header class="bg-white py-12 shadow-sm">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center">
-                <h1 class="text-4xl font-bold mb-2">Science of Agent Evaluation</h1>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Science of Agent Evaluation</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto px-4">
                     Advancing the systematic study and evaluation of AI agents.
                 </p>
             </div>
@@ -453,5 +471,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
